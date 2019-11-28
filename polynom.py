@@ -15,6 +15,6 @@ def get_poly(*coeffs: float) -> Callable[[float], float]:
     """
 
     def polynomial(x_repr):
-        return sum(coeff * x_repr ** idx for idx, coeff in enumerate(coeffs))
+        return sum(coeff * x_repr ** idx for idx, coeff in enumerate(coeffs[::-1]))
 
     return polynomial
