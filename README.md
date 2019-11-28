@@ -1,6 +1,7 @@
 # py_polynom
 
-Create a function that, for given coefficients, returns a function for calculating the value of a polynomial of a given degree. The degree of the polynomial is determined by the number of factors.
+Create a function that, for given coefficients, returns a function for calculating the value of a polynomial of a given degree. 
+The degree of the polynomial is determined by the number of factors.
 For instance:
 
 (1, 2, 3) -> 1 * x * x + 2 * x + 3
