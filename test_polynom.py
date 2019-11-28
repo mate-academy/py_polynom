@@ -11,3 +11,7 @@ def test_linear():
 
 def test_quadratic():
     assert polynom.get_poly(1, 1, 1)(0) == 1
+
+
+def test_quadraticd():
+        assert polynom.get_poly(1, 2, 3)(1) == 6
