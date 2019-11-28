@@ -1,6 +1,23 @@
-from typing import Callable
+"""
+docstring
+"""
 
 
-def get_poly(*koeffs: float) -> Callable[[float], float]:
+def get_poly(*coffs):
+    """
 
-    return lambda x: 42
+    :param coffs:
+    :return:
+    """
+    def poly(num):
+        """
+
+        :param num:
+        :return:
+        """
+        res = 0
+        for index, item in enumerate(coffs):
+            res += item * num ** index
+        return res
+        #return sum(cof * num ** index for index, cof in enumerate(coffs))
+    return poly
