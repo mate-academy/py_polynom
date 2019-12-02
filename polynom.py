@@ -1,6 +1,9 @@
+"""docstring"""
 from typing import Callable
 
 
 def get_poly(*koeffs: float) -> Callable[[float], float]:
-
-    return lambda x: 42
+    """get poly"""
+    def g_get_poly(number):
+        return sum([x*number**id_x for id_x, x in enumerate(koeffs)])
+    return g_get_poly
